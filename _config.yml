@@ -9,11 +9,10 @@ paginate: 10
 paginate_path: "/page:num/"
 
 header_pages:
-  - about-springhill-neighborhood.md
+  - about.md
   - hootenanny.md
-  - contact-us.md
   - mutualaid.md
-
+  - contact-us.md
 formspree_endpoint: "https://formspree.io/f/xojzqely"
 
 plugins:

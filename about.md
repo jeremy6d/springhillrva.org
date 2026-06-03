@@ -2,7 +2,7 @@
 layout: "page"
 title: "About the Springhill Neighborhood"
 menu_title: About the Neighborhood
-permalink: "/about-springhill-neighborhood/"
+permalink: "/about"
 wordpress_id: "24"
 ---
 

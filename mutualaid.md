@@ -1,6 +1,7 @@
 ---
 layout: "page"
 title: "Springhill Mutual Aid"
+menu_title: Mutual Aid
 permalink: "/mutualaid/"
 wordpress_id: "257"
 ---
