@@ -27,4 +27,8 @@ The contact page posts to Formspree (`formspree_endpoint` in `_config.yml`). Fie
 
 ## Deployment
 
-Pushes to `main` deploy via GitHub Actions. Add a `CNAME` in the repo for `www.springhillrva.org` and point DNS at GitHub Pages.
+Pushes to `main` deploy via GitHub Actions.
+
+**One-time setup:** In the repo on GitHub, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. Without that, `configure-pages` fails with `Get Pages site failed` / `Not Found`.
+
+The repo `CNAME` is `www.springhillrva.org`; point DNS for `www` (and optionally the apex domain) at GitHub Pages.

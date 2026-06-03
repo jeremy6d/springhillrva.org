@@ -34,3 +34,10 @@ permalink: /hootenanny/
 <p>Public restroom facilities will be available on site.</p>
 
 <p><a href="/2025/06/21/springhill-hootenanny/">See last year&rsquo;s announcement</a> for a sense of the vibe — poster and details from 2025.</p>
+
+<section class="hootenanny-donate">
+  <h2>Support the Hootenanny</h2>
+  <p>The festival is free to attend, but it isn&rsquo;t free to produce. Donations help pay the bands and keep our neighborhood performance stage in good shape year after year.</p>
+  <p>Any amount is welcome and goes straight toward musician compensation and stage upkeep.</p>
+  <a class="btn-donate" href="https://paypal.me/jpweiland" target="_blank" rel="noopener noreferrer">Donate via PayPal</a>
+</section>
