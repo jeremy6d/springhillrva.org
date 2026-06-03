@@ -1,0 +1,15 @@
+<form class="contact-form" action="{{ site.formspree_endpoint }}" method="POST">
+  <div class="form-field">
+    <label for="contact-name">Name</label>
+    <input type="text" id="contact-name" name="name" required autocomplete="name">
+  </div>
+  <div class="form-field">
+    <label for="contact-email">Email</label>
+    <input type="email" id="contact-email" name="email" required autocomplete="email">
+  </div>
+  <div class="form-field">
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="6" required></textarea>
+  </div>
+  <button type="submit" class="btn-primary">Send message</button>
+</form>

@@ -1,0 +1,11 @@
+<li class="post-card">
+  <a href="{{ post.url | relative_url }}" class="post-card-link">
+    <h3 class="post-card-title">{{ post.title }}</h3>
+    <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </time>
+    {% if post.excerpt %}
+      <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+    {% endif %}
+  </a>
+</li>

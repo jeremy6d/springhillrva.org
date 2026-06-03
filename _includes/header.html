@@ -1,0 +1,37 @@
+<header class="site-header">
+  <div class="banner">
+    <a href="{{ '/' | relative_url }}" class="banner-link">
+      <img src="{{ '/assets/images/cropped-springhill_banner_words1.jpg' | relative_url }}"
+           alt="{{ site.title }}"
+           class="banner-image"
+           width="1200" height="300">
+    </a>
+  </div>
+  <nav class="site-nav" aria-label="Main">
+    <div class="container nav-inner">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
+        {% for p in site.header_pages %}
+          {% assign nav_page = site.pages | where: "name", p | first %}
+          {% if nav_page %}
+            <li>
+              <a href="{{ nav_page.url | relative_url }}"
+                 {% if page.url == nav_page.url %} aria-current="page"{% endif %}>
+                {{ nav_page.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
+<script>
+  document.querySelector('.nav-toggle')?.addEventListener('click', function () {
+    const menu = document.getElementById('nav-menu');
+    const open = menu.classList.toggle('is-open');
+    this.setAttribute('aria-expanded', open);
+  });
+</script>

@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="home-hero">
+  <div class="container">
+    <h1 class="home-title">Welcome to Springhill</h1>
+    <p class="home-lead">
+      A small Richmond neighborhood on the south side of the Lee Bridge, between Manchester and Woodland Heights —
+      with James River Park, historic bungalows, and neighbors who stay engaged.
+    </p>
+  </div>
+</div>
+
+<div class="container home-content">
+  {% if content != "" %}
+  <div class="page-content">
+    {{ content }}
+  </div>
+  {% endif %}
+
+  <section class="news-feed">
+    <h2>Neighborhood News</h2>
+    <ul class="post-list">
+      {% for post in paginator.posts %}
+        {% include post-card.html %}
+      {% endfor %}
+    </ul>
+    {% include pagination.html %}
+  </section>
+</div>

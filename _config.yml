@@ -1,0 +1,28 @@
+title: Springhill RVA
+description: >-
+  News and information for the Springhill neighborhood in Richmond, Virginia —
+  south of the James River, between Manchester and Woodland Heights.
+url: "https://www.springhillrva.org"
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+paginate: 10
+paginate_path: "/page:num/"
+
+header_pages:
+  - about-springhill-neighborhood.md
+  - contact-us.md
+  - mutualaid.md
+
+formspree_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+exclude:
+  - _scripts
+  - _data/springhillrvaorg.WordPress.2026-02-16.xml
+  - Gemfile
+  - Gemfile.lock
+  - README.md

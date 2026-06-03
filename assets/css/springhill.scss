@@ -1,0 +1,326 @@
+---
+---
+
+:root {
+  --bg: #f7fbf4;
+  --bg-header: #e8f3e4;
+  --green-dark: #2d5a3d;
+  --green-mid: #4a8f5c;
+  --green-light: #a8d5a2;
+  --sun: #e8c547;
+  --text: #1a2e1f;
+  --text-muted: #4a5f4e;
+  --border: #c5dcc0;
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+  --max-width: 960px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; }
+
+a {
+  color: var(--green-mid);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  &:hover { color: var(--green-dark); }
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--green-dark);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.site-header {
+  background: var(--bg-header);
+  border-bottom: 2px solid var(--green-light);
+  box-shadow: 0 2px 8px rgba(45, 90, 61, 0.08);
+}
+
+.banner {
+  background: linear-gradient(180deg, #d4ecd0 0%, var(--bg-header) 100%);
+  padding: 0.5rem 0;
+}
+
+.banner-link { display: block; text-align: center; }
+
+.banner-image {
+  max-height: 140px;
+  width: auto;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+}
+
+.site-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--green-dark);
+  text-decoration: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: var(--green-mid);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: var(--green-dark);
+    text-decoration: none;
+    font-weight: 600;
+    &[aria-current="page"] {
+      border-bottom: 2px solid var(--sun);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-toggle { display: block; }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    &.is-open { display: flex; }
+  }
+}
+
+/* Main */
+.site-main {
+  padding: 2rem 0 3rem;
+  min-height: 50vh;
+}
+
+.home-hero {
+  background: linear-gradient(135deg, var(--bg-header) 0%, var(--bg) 60%);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+.home-lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 42rem;
+  margin: 0;
+}
+
+.news-feed h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-light);
+}
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-card {
+  border-bottom: 1px solid var(--border);
+  &:last-child { border-bottom: none; }
+}
+
+.post-card-link {
+  display: block;
+  padding: 1.25rem 0;
+  text-decoration: none;
+  color: inherit;
+  &:hover .post-card-title { color: var(--green-mid); }
+}
+
+.post-card-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+  color: var(--green-dark);
+}
+
+.post-card-date {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.post-card-excerpt {
+  margin: 0.5rem 0 0;
+  color: var(--text-muted);
+}
+
+/* Post / page */
+.post, .page {
+  .container, & { max-width: var(--max-width); margin: 0 auto; padding: 0 1.25rem; }
+}
+
+.post-header, .page-header {
+  margin-bottom: 1.5rem;
+}
+
+.post-title, .page-title {
+  font-size: 1.85rem;
+  margin: 0 0 0.5rem;
+}
+
+.post-meta {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.category-tag {
+  display: inline-block;
+  background: var(--green-light);
+  color: var(--green-dark);
+  padding: 0.1rem 0.5rem;
+  border-radius: 3px;
+  margin-left: 0.35rem;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.entry-content {
+  p { margin: 0 0 1rem; }
+  blockquote {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    border-left: 4px solid var(--green-mid);
+    background: var(--bg-header);
+    color: var(--text-muted);
+  }
+  ul, ol { margin: 0 0 1rem; padding-left: 1.5rem; }
+  figure {
+    margin: 1.5rem 0;
+    figcaption {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+    }
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .gallery-item img {
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 32rem;
+  margin-top: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: var(--green-dark);
+  }
+  input, textarea {
+    width: 100%;
+    font: inherit;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: #fff;
+    &:focus {
+      outline: 2px solid var(--green-light);
+      border-color: var(--green-mid);
+    }
+  }
+}
+
+.btn-primary {
+  background: var(--green-mid);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  font: inherit;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover { background: var(--green-dark); }
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.pagination-info {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--bg-header);
+  border-top: 2px solid var(--green-light);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  p { margin: 0.25rem 0; }
+}
