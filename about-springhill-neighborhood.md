@@ -1,6 +1,7 @@
 ---
 layout: "page"
 title: "About the Springhill Neighborhood"
+menu_title: About the Neighborhood
 permalink: "/about-springhill-neighborhood/"
 wordpress_id: "24"
 ---

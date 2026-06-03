@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Springhill Hootenanny 2026
+menu_title: Hootenanny
 permalink: /hootenanny/
 ---
 
