@@ -242,6 +242,34 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Hootenanny page */
+.hootenanny-lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.hootenanny-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1.25rem;
+  margin: 0 0 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-header);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+
+  dt {
+    font-weight: 600;
+    color: var(--green-dark);
+    margin: 0;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
 /* Contact form */
 .contact-form {
   max-width: 32rem;

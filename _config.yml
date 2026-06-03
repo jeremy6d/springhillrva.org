@@ -10,6 +10,7 @@ paginate_path: "/page:num/"
 
 header_pages:
   - about-springhill-neighborhood.md
+  - hootenanny.md
   - contact-us.md
   - mutualaid.md
 
