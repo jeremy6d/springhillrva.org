@@ -23,8 +23,7 @@ Images are fetched from the Internet Archive when the live `springhillrva.org` h
 
 ## Contact form (Formspree)
 
-1. Create a form at [formspree.io](https://formspree.io).
-2. Set `formspree_endpoint` in `_config.yml` to your form URL (e.g. `https://formspree.io/f/xxxxxxxx`).
+The contact page posts to Formspree (`formspree_endpoint` in `_config.yml`). Field names: `name`, `email`, `phone`, `address`, `message`.
 
 ## Deployment
 

@@ -59,20 +59,6 @@ h1, h2, h3, h4 {
   box-shadow: 0 2px 8px rgba(45, 90, 61, 0.08);
 }
 
-.banner {
-  background: linear-gradient(180deg, #d4ecd0 0%, var(--bg-header) 100%);
-  padding: 0.5rem 0;
-}
-
-.banner-link { display: block; text-align: center; }
-
-.banner-image {
-  max-height: 140px;
-  width: auto;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
 .nav-inner {
   display: flex;
   align-items: center;

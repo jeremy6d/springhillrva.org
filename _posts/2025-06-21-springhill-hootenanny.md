@@ -7,4 +7,4 @@ wordpress_id: "316"
 categories: ["uncategorized"]
 ---
 
-<figure class="wp-block-image size-full is-style-default"><img src="/assets/images/HOOTENANNY25.jpg" alt="" /></figure>
+<figure class="wp-block-image size-full is-style-default"><img src="/assets/images/HOOTENANNY25.jpg" alt="Springhill Hootenanny poster — July 5, 2025 on W 20th Street, featuring Stellar Rose and Blistered Hearts" /></figure>

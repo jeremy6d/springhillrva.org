@@ -13,7 +13,7 @@ header_pages:
   - contact-us.md
   - mutualaid.md
 
-formspree_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
+formspree_endpoint: "https://formspree.io/f/xojzqely"
 
 plugins:
   - jekyll-feed
