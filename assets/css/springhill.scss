@@ -243,6 +243,20 @@ h1, h2, h3, h4 {
 }
 
 /* Hootenanny page */
+.hootenanny-poster {
+  margin: 0 0 2rem;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    width: min(100%, 28rem);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 28px rgba(45, 90, 61, 0.18);
+    border: 1px solid var(--border);
+  }
+}
+
 .hootenanny-lead {
   font-size: 1.15rem;
   color: var(--text-muted);
