@@ -48,4 +48,5 @@ hide_title: true
   <p>The festival is free to attend, but it isn&rsquo;t free to produce. Donations help pay the bands and keep our neighborhood performance stage in good shape year after year.</p>
   <p>Any amount is welcome and goes straight toward musician compensation and stage upkeep.</p>
   <a class="btn-donate" href="https://paypal.me/jpweiland" target="_blank" rel="noopener noreferrer">Donate via PayPal</a>
+  <iframe class="fundraising-widget" width="220px" height="484px" data-id="a014f8" data-url-key="springhill-hootenanny-2026" data-src="https://www.customink.com/fundraising/widgets/springhill-hootenanny-2026" data-utm-campaign="campaign-embed-v1"></iframe> <script src="https://www.customink.com/fundraising/assets/campaign_widget/fundraising_widget.js"></script>
 </section>
