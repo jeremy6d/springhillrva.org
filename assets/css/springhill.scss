@@ -317,6 +317,26 @@ h1, h2, h3, h4 {
   }
 }
 
+.mutualaid-photo {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    width: min(100%, 20rem);
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(45, 90, 61, 0.12);
+    border: 1px solid var(--border);
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+}
+
 /* Contact form */
 .contact-form {
   max-width: 32rem;
