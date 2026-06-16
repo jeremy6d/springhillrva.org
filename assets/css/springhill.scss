@@ -59,6 +59,23 @@ h1, h2, h3, h4 {
   box-shadow: 0 2px 8px rgba(45, 90, 61, 0.08);
 }
 
+.site-banner {
+  display: block;
+  overflow: hidden;
+  max-height: 7.5rem;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.site-banner-image {
+  display: block;
+  width: 100%;
+  height: 7.5rem;
+  max-height: 7.5rem;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;

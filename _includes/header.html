@@ -1,4 +1,11 @@
 <header class="site-header">
+  <a href="{{ '/' | relative_url }}" class="site-banner" aria-label="{{ site.title }} home">
+    <img src="{{ '/assets/images/springhill-neighborhood-banner.jpg' | relative_url }}"
+         alt=""
+         class="site-banner-image"
+         width="1024" height="768"
+         decoding="async">
+  </a>
   <nav class="site-nav" aria-label="Main">
     <div class="container nav-inner">
       <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
