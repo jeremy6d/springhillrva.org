@@ -7,4 +7,4 @@ wordpress_id: "321"
 categories: ["uncategorized"]
 ---
 
-<p>We're looking to get out of the Old and Historic District designation. If you're interested, fill out the contact form to stay in touch.</p>
+<p>Many neighbors are looking to get out of the Old and Historic District designation. If you're interested, fill out the contact form to stay in touch.</p>
